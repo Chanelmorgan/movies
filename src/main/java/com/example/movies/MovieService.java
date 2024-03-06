@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @Service
 public class MovieService {
+    @Autowired
     private MovieRepository movieRepository;
     @Autowired
     public MovieService(MovieRepository movieRepository) {
@@ -19,7 +20,7 @@ public class MovieService {
 
     }
 
-    public Optional<Movie> singleMovie(ObjectId id){
-        return  movieRepository.findById(id);
+    public Optional<Movie> singleMovie(String imdbId){
+        return  movieRepository.findMovieByImdbID(imdbId);
     }
 }
