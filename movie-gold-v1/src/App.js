@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import api from './api/axiosConfig'; 
+api.defaults.baseURL = 'http://localhost:8080';
 import { useState, useEffect } from 'react';
 
 function App() {
