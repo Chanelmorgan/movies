@@ -8,7 +8,7 @@ import {Routes, Route} from 'react-router-dom'
 import Home from './components/home/Home';
 
 function App() {
-  const [Movies, setMovies] = useState(); 
+  const [movies, setMovies] = useState(); 
   
   const getMovies = async () => { 
   
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout/>}> 
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<Home movies={movies}/>}></Route>
 
         </Route>
       </Routes>
