@@ -7,6 +7,7 @@ import Layout from './components/Layout';
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/home/Home';
 import Header from './components/header/Header';
+import NotFound from './components/notFound/NotFound';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Route path="/" element={<Home movies={movies}/>}></Route>
         <Route path="/Trailer/:ytTrailerId" element={<Trailer></Trailer>}></Route>
         <Route path="/Reviews/:movieId" element= {<Reviews getMovieData ={getMovieData} reviews ={reviews} setReviews ={setReviews}/>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
         </Route>
       </Routes>
     
