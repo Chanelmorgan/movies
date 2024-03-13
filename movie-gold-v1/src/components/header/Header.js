@@ -4,12 +4,12 @@ import { faVideoSlash } from '@fortawesome/free-solid-svg-icons';
 import { Button} from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import NavBar from 'react-bootstrap/NavBar';
+import Navbar from 'react-bootstrap/NavBar';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <NavBvr bg="dark" variant='dark' expand='lg'>
+    <Navbar bg="dark" variant='dark' expand='lg'>
         <Container fluid>
             <Navbar.Brand href="/" style={{"color": gold}}> 
                 <FontAwesomeIcon icon={faVideoSlash} />Gold
@@ -30,7 +30,7 @@ const Header = () => {
             </Navbar.Collapse>
         </Container>
 
-    </Navvar>
+    </Navbar>
   )
 }
 
