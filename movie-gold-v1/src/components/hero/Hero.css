@@ -61,6 +61,16 @@
     transition: 0.3s;
     cursor: pointer;
 }
-.play-button-icon:hover{
-    
+.play-button-icon:hover{ 
+    font-size: 4rem; 
+    color: white; 
+
+}
+
+@media only screen and (max-width: 880px){ 
+    .movie-detail{ 
+        flex-direction: column; 
+        align-items: center; 
+        top: 20px; 
+    }
 }
